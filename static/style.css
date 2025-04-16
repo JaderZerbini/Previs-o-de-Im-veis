@@ -1,3 +1,4 @@
+/* Estilos padrão para telas maiores (desktop) */
 body {
     font-family: sans-serif;
     background-color: #f0f0f0;
@@ -70,4 +71,26 @@ button:hover {
 
 #preco {
     color: #007BFF;
+}
+
+
+/* Media Query para telas menores (celulares) */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Ocupa 90% da largura da tela */
+        padding: 20px;
+    }
+
+    input[type="number"],
+    select {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    button {
+        font-size: 16px; /* Reduz o tamanho da fonte do botão */
+    }
+
+    .form {
+        align-items: center; /* Alinha os elementos ao centro */
+    }
 }
