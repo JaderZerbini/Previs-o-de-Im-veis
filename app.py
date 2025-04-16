@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 import numpy as np
 
-app = Flask(__name__, static_folder='static') # Importante adicionar essa linha e o render_template
+app = Flask(__name__, static_folder='static', template_folder='templates') # Importante adicionar essa linha e o render_template
 
 @app.route('/')  # Rota para a página inicial
 def index():
