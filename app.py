@@ -10,7 +10,11 @@ def index():
 
 # Carregar o modelo treinado
 filename = 'modelo_preco_casas.pkl'
-model = pickle.load(open(filename, 'rb'))
+try:
+    model = pickle.load(open(filename, 'rb'))
+except FileNotFoundError:
+    print(f"Erro: Arquivo '{filename}' não encontrado. Certifique-se de que o arquivo está no mesmo diretório do script.")
+    exit()
 
 @app.route('/predict', methods=['POST'])
 def predict():
