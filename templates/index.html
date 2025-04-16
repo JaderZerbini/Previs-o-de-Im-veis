@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Previsão de Preço de Imóvel - Adamantina-SP</title>
+    <title>Previsão de Preço de Imóveis - Adamantina-SP</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </head>
@@ -10,37 +10,37 @@
         <h1>Previsão de Preço de Imóvel</h1>
 
         <div class="form">
-            <label for="classif_bairro">Classificação do Bairro (0-5):</label>
+            <label for="classif_bairro">Qualidade do Bairro (0-5):</label>
             <input type="number" id="classif_bairro" min="0" max="5"><br><br>
 
             <label for="area_terreno">Área do Terreno:</label>
             <input type="number" id="area_terreno"><br><br>
 
-            <label for="area_construida">Área Construída:</label>
+            <label for="area_construida">Área Construída(m²):</label>
             <input type="number" id="area_construida"><br><br>
 
-            <label for="quartos">Número de Quartos:</label>
+            <label for="quartos">Número de Quartos(m²):</label>
             <input type="number" id="quartos"><br><br>
 
             <label for="banheiros">Número de Banheiros:</label>
             <input type="number" id="banheiros"><br><br>
 
-            <label for="classif_casa">Classificação da Casa (0-5):</label>
+            <label for="classif_casa">Qualidade da Casa (0-5):</label>
             <input type="number" id="classif_casa" min="0" max="5"><br><br>
 
-            <label for="casa_predio">Casa ou Prédio (0 = Casa, 1 = Prédio):</label>
+            <label for="casa_predio">Casa ou Prédio:</label>
             <select id="casa_predio">
                 <option value="0">Casa</option>
                 <option value="1">Prédio</option>
             </select><br><br>
 
-            <label for="energ_solar">Energia Solar (0 = Não, 1 = Sim):</label>
+            <label for="energ_solar">Energia Solar:</label>
             <select id="energ_solar">
                 <option value="0">Não</option>
                 <option value="1">Sim</option>
             </select><br><br>
 
-            <label for="mov_planejados">Móveis Planejados (0 = Não, 1 = Sim):</label>
+            <label for="mov_planejados">Móveis Planejados:</label>
             <select id="mov_planejados">
                 <option value="0">Não</option>
                 <option value="1">Sim</option>
